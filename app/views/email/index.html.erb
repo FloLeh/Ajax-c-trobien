@@ -1,10 +1,15 @@
-<h1>Voici mes emails</h1>
-<div class="objects">
-  <% Email.all.each do |e,i| %>
-    <p><%= link_to e.object, my_method_email_path(id: e.id), remote: true%></p>
-  <% end %>
-</div>
+<header>
+  <h1>Gmail</h1>
+</header>
+<main>
+  <div class="objects">
+    <% Email.all.each do |e,i| %>
+      <p><%= link_to e.object, my_method_email_path(id: e.id), remote: true%></p>
+      <hr>
+    <% end %>
+  </div>
 
-<div class="bodies">
+  <div class="bodies">
 
-</div>
+  </div>
+</main>

@@ -1,3 +1,49 @@
 // Place all the styles related to the Email controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  margin: 0;
+  font-family: arial, sans-serif;
+}
+
+header {
+  background-color: rgb(231, 72, 3);
+}
+
+h1 {
+  margin: 0;
+  padding: 15px;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.objects {
+  border: 1px solid rgba(0,0,0,0.5);
+  padding: 20px;
+}
+
+.objects a {
+  color: rgba(0,0,0,0.5);
+  text-decoration: none;
+  transition: color ease-in 0.2s;
+}
+
+.objects a:hover {
+  color: rgba(0,0,0,0.8);
+}
+
+.bodies {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+h2 {
+  padding-left: 10px;
+  text-align: left;
+}

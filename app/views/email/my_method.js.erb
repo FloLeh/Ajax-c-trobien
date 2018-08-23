@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-  let new_email = $("<%= j (render 'layouts/email', email: @email) %>").hide();
+  let new_email = $("<%= j (render 'layouts/email') %>").hide();
+  $('.bodies').empty();
   $('.bodies').append(new_email);
-  new_email.slideDown();
+  new_email.fadeIn();
 })

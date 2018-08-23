@@ -4,4 +4,6 @@ $(document).ready(function() {
   $('.bodies').empty();
   $('.bodies').append(new_email);
   new_email.fadeIn();
+
+  $('#<%= params[:id] %>').css({"font-style": 'italic', "font-weight":"normal"});
 })

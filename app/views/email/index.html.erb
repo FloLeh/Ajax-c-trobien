@@ -3,9 +3,14 @@
 </header>
 <main>
   <div class="objects">
-    <% Email.all.each do |e,i| %>
-      <p><%= link_to e.object, my_method_email_path(id: e.id), remote: true%></p>
-      <hr>
+    <% Email.all.each do |e| %>
+      <% if e.read == false %>
+        <p><strong><%= link_to e.object, my_method_email_path(id: e.id), remote: true, id: "#{e.id}"%></strong><hr></p>
+
+      <% else %>
+        <p><em><%= link_to e.object, my_method_email_path(id: e.id), remote: true, id: "#{e.id}"%></em><hr></p>
+
+      <% end %>
     <% end %>
   </div>
 

@@ -1,0 +1,6 @@
+$(document).ready(function() {
+  let id = $('#<%= params[:id] %>').index($('p'))
+  alert(id);
+  $('#<%= params[:id] %>').fadeOut();
+  $('hr:eq('+id+')').fadeOut();
+})

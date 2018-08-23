@@ -24,17 +24,22 @@ main {
 
 .objects {
   border: 1px solid rgba(0,0,0,0.5);
-  padding: 20px;
+  width: 120px;
 }
 
 .objects a {
-  color: rgba(0,0,0,0.5);
+  color: rgba(0,0,0,1);
   text-decoration: none;
-  transition: color ease-in 0.2s;
+  padding-bottom: 5px;
+  padding : 15px;
 }
 
 .objects a:hover {
-  color: rgba(0,0,0,0.8);
+  text-decoration: underline;
+}
+
+.objects p:last-child {
+  margin: 0;
 }
 
 .bodies {
@@ -43,7 +48,19 @@ main {
   padding: 20px;
 }
 
+.bodies a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgb(187, 17, 0);
+  color: white;
+}
+
 h2 {
   padding-left: 10px;
   text-align: left;
+}
+
+hr {
+  margin: 0;
 }

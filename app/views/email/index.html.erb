@@ -1,0 +1,10 @@
+<h1>Voici mes emails</h1>
+<div class="objects">
+  <% Email.all.each do |e,i| %>
+    <p><%= link_to e.object, my_method_email_path(id: e.id), remote: true%></p>
+  <% end %>
+</div>
+
+<div class="bodies">
+
+</div>

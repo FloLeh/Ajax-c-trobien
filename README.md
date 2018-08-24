@@ -1,6 +1,9 @@
 # Welcome to Gmail
 [Want to see your mails ?](https://thp-nantes-mails.herokuapp.com/)
-or
+
+
+on local :
+
 ```
 git clone https://github.com/FloLeh/Ajax-c-trobien
 ```

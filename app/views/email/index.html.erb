@@ -5,10 +5,10 @@
   <div class="objects">
     <% Email.all.each do |e| %>
       <% if e.read == false %>
-        <p><strong><%= link_to e.object, my_method_email_path(id: e.id), remote: true, id: "#{e.id}"%></strong><hr></p>
+        <p><strong><%= link_to e.object, my_method_email_path(id: e.id), remote: true, id: "#{e.id}"%></strong></p>
 
       <% else %>
-        <p><em><%= link_to e.object, my_method_email_path(id: e.id), remote: true, id: "#{e.id}"%></em><hr></p>
+        <p><em><%= link_to e.object, my_method_email_path(id: e.id), remote: true, id: "#{e.id}"%></em></p>
 
       <% end %>
     <% end %>
